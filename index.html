@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+        * {
+            color: #00303C;
+        }
+    </style>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+</head>
+
+<body class="poppins bg-[#F4F7FF]">
+    <section class="w-11/12 mx-auto mt-6 bg-white p-6 flex flex-row justify-between items-center rounded-2xl">
+        <div class="flex flex-row gap-3 items-center">
+            <img src="assets/logo.png" alt="">
+            <p class="hidden sm:block text-[34px]">Dev<span class="text-[#00303C] font-bold">Board</span></p>
+        </div>
+        <div class="flex flex-row items-center gap-8">
+            <div class="flex px-5 flex-row gap-3 items-center bg-[#F4F7FF] p-3 rounded-3xl">
+                <img src="assets/checkbox.png" alt="">
+                <p class="text-[32px] font-bold">23</p>
+            </div>
+            <div class="bg-[#F4F7FF] p-3 rounded-full">
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-11/12 mx-auto mt-6 flex flex-col md:flex-row items-start gap-6">
+        <section class="bg-white rounded-2xl">
+            <div class="p-6 flex flex-col gap-5 md:flex-row justify-between">
+                <div class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl py-4 pl-4 pr-5">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <p class="text-[32px] font-bold -mt-2">05</p>
+                    </div>
+                </div>
+                <div class="text-white flex flex-row items-center justify-center gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-2xl py-4 pl-20 pr-40">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-sm md:text-[24px] text-white">Discover Something <br> New Today!</p>
+                </div>
+                <div class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl pl-4 pr-5">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <p class="text-[32px] font-bold -mt-2">05</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+
+            <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Task Cards (Repeated 6 times) -->
+                <!-- You can generate these dynamically using a loop in JavaScript -->
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4">
+                    <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Repeat the above card structure 4 more times for a total of 6 task cards -->
+            </div>
+        </section>
+
+        <section class= "w-full md:w-1/2 h-screen bg-white rounded-2xl flex-grow">
+            <div class="px-2 pt-2 flex flex-col  justify-center items-center">
+                <div class="flex flex-row justify-center items-center gap-3 mt-5">
+                    <img src="assets/activity.png" alt="">
+                <p class="text-lg font-medium">Activity Log</p>
+                </div>
+            
+                <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl m-4">Clear History</button>
+            </div>
+            <div class="border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+
+            <div class="p-4">
+                <div class="bg-[#F4F7FF] p-2 rounded-2xl flex flex-col items-center gap-6">
+                    <p>You have Complete The Task <span>Add Dark Mode</span> at <span>12:48:15 PM</span></p>
+                </div>
+                
+            </div>
+            
+        </section>
+    </section>
+</body>
+
+</html>
