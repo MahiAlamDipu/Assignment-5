@@ -31,7 +31,7 @@
     </script>
 </head>
 
-<body class="poppins bg-[#F4F7FF]">
+<body class="poppins bg-[#F4F7FF]" id="body">
     <section class="w-11/12 mx-auto mt-6 bg-white p-6 flex flex-row justify-between items-center rounded-2xl">
         <div class="flex flex-row gap-3 items-center">
             <img src="assets/logo.png" alt="">
@@ -42,7 +42,7 @@
                 <img src="assets/checkbox.png" alt="">
                 <p class="text-[32px] font-bold">23</p>
             </div>
-            <div class="bg-[#F4F7FF] p-3 rounded-full">
+            <div class="bg-[#F4F7FF] p-3 rounded-full" id="colorPicker">
                 <img src="assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -182,7 +182,7 @@
                             <p class="font-light">Deadline</p>
                             <time class="font-medium text-lg">21 March 2025</time>
                         </div>
-                        <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl">Completed</button>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl">Completed</button>
                     </div>
                 </div>
                 <!-- Repeat the above card structure 4 more times for a total of 6 task cards -->
@@ -196,7 +196,7 @@
                 <p class="text-lg font-medium">Activity Log</p>
                 </div>
             
-                <button class="p-3 text-lg text-white bg-[#3752FD] rounded-xl m-4">Clear History</button>
+                <button class="p-3 text-lg text-white hover:bg-purple-900  bg-[#3752FD] rounded-xl m-4">Clear History</button>
             </div>
             <div class="border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
 
@@ -209,6 +209,8 @@
             
         </section>
     </section>
+    <script src="utilities/utility.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
