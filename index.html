@@ -9,12 +9,14 @@
     <!-- Google Font: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <style>
         .poppins {
             font-family: "Poppins", sans-serif;
         }
+
         * {
             color: #00303C;
         }
@@ -51,7 +53,8 @@
     <section class="w-11/12 mx-auto mt-6 flex flex-col md:flex-row items-start gap-6">
         <section class="bg-white rounded-2xl">
             <div class="p-6 flex flex-col gap-5 md:flex-row justify-between">
-                <div class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl py-4 pl-4 pr-5">
+                <div
+                    class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl py-4 pl-4 pr-5">
                     <div class="p-3 bg-white rounded-full">
                         <img src="assets/checkbox.png" alt="">
                     </div>
@@ -60,11 +63,14 @@
                         <p class="text-[32px] font-bold -mt-1" id="task-assigned">05</p>
                     </div>
                 </div>
-                <div class="text-white flex flex-row items-center justify-center gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-2xl py-4 pl-20 pr-40">
-                    <img src="assets/board.png" alt="">
-                    <p class="text-sm md:text-[24px] text-white">Discover Something <br> New Today!</p>
+                <div
+                    class="text-white flex flex-row items-center justify-center gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-2xl py-4 pl-20 pr-40"
+                    id="discover">
+                    <img src="assets/board.png" alt="" id="discover">
+                    <p class="text-sm md:text-[24px] text-white " id="discover">Discover Something <br> New Today!</p>
                 </div>
-                <div class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl pl-4 pr-5">
+                <div
+                    class="text-[#00303C] flex flex-row items-center justify-center gap-4 bg-[#F4F7FF] rounded-2xl pl-4 pr-5">
                     <div class="p-3 bg-white rounded-full">
                         <img src="assets/calender.png" alt="">
                     </div>
@@ -77,14 +83,15 @@
             <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
 
             <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-                
+
 
                 <!-- card - 01 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
                     <p class="bg-white p-2 inline rounded-lg">ShopEase</p>
-                    <p class="text-2xl text-[#00303C] font-medium" id="task">Fix Mobile Button Issue</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Fix Mobile Button Issue</p>
                     <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
-                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that everything is working correctly...
+                        Debug using Chrome DevTools, check for overlapping elements in your layout and ensure that
+                        everything is working correctly...
                     </div>
                     <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
                     <div class="flex flex-row justify-between w-full">
@@ -92,43 +99,117 @@
                             <p class="font-light">Deadline</p>
                             <time class="font-medium text-lg">21 March 2025</time>
                         </div>
-                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl" id="completed">Completed</button>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
                     </div>
                 </div>
                 <!-- card - 02 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
                     <p class="bg-white p-2 inline rounded-lg">CloudSync</p>
-                    <p class="text-2xl text-[#00303C] font-medium" id="task">Add Dark Mode</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Add Dark Mode</p>
                     <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
-                        Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.                    </div>
+                        Store the user's preference in localStorage, update CSS variables dynamically, and apply a
+                        smooth transition effect. </div>
                     <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
                     <div class="flex flex-row justify-between w-full">
                         <div>
                             <p class="font-light">Deadline</p>
                             <time class="font-medium text-lg">21 March 2025</time>
                         </div>
-                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl" id="completed">Completed</button>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
+                    </div>
+                </div>
+                <!-- card-03 -->
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
+                    <p class="bg-white p-2 inline rounded-lg">SwiftPay</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Optimize Home page </p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
+                    </div>
+                </div>
+                <!-- card-04 -->
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
+                    <p class="bg-white p-2 inline rounded-lg">Meta</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Add new emoji 🤲</p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
+                    </div>
+                </div>
+                <!-- card-05 -->
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
+                    <p class="bg-white p-2 inline rounded-lg">Google LLC</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Integrate OpenAI API </p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly
+                    </div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
+                    </div>
+                </div>
+                <!-- card-06 -->
+                <div class="bg-[#F4F7FF] p-6 rounded-2xl flex flex-col items-start gap-4 task">
+                    <p class="bg-white p-2 inline rounded-lg">Glassdoar</p>
+                    <p class="text-2xl text-[#00303C] font-medium">Improve Job searching </p>
+                    <div class="w-full p-4 bg-white rounded-xl text-gray-600 overflow-hidden hover:overflow-x-auto">
+                        Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</div>
+                    <div class="mt-2 border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
+                    <div class="flex flex-row justify-between w-full">
+                        <div>
+                            <p class="font-light">Deadline</p>
+                            <time class="font-medium text-lg">21 March 2025</time>
+                        </div>
+                        <button class="p-3 text-lg hover:bg-green-600 text-white bg-[#3752FD] rounded-xl"
+                            id="completed">Completed</button>
                     </div>
                 </div>
                 <!-- Repeat the above card structure 4 more times for a total of 6 task cards -->
             </div>
         </section>
 
-        <section class= "w-full md:w-3/4 h-screen bg-white rounded-2xl flex-grow">
+        <section class="w-full md:w-1/2  bg-white rounded-2xl flex-grow">
             <div class="px-2 pt-2 flex flex-col  justify-center items-center">
                 <div class="flex flex-row justify-center items-center gap-3 mt-5">
                     <img src="assets/activity.png" alt="">
-                <p class="text-lg font-medium">Activity Log</p>
+                    <p class="text-lg font-medium">Activity Log</p>
                 </div>
-            
-                <button class="p-3 text-lg text-white hover:bg-purple-900  bg-[#3752FD] rounded-xl m-4" id="clear-history">Clear History</button>
+
+                <button class="p-3 text-lg text-white hover:bg-purple-900  bg-[#3752FD] rounded-xl m-4"
+                    id="clear-history">Clear History</button>
             </div>
             <div class="border-t-2 border-dashed border-[#D1D5FE] w-full"></div>
 
-            <div class="p-4 rounded-2xl flex flex-col items-center gap-6" id="activity-history">
-    
+            <div class="p-4 rounded-2xl flex flex-col items-center gap-3" id="activity-history">
+
             </div>
-            
+
         </section>
     </section>
     <script src="utilities/utility.js"></script>
