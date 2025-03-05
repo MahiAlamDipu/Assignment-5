@@ -18,7 +18,7 @@ const date = getElementById('date')
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 date.innerText = months[now.getMonth()] + ' ' + now.getDate() + ' ' + now.getFullYear()
-console.log(now.getDate())
+
 
 
 
